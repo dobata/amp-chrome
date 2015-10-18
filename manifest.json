@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "AMP Accelerated Mobile Page Reader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "short_name": "AMP Reader",
   "content_scripts": [
     {
@@ -25,11 +25,6 @@
     "16": "icons/default16.png",
     "48": "icons/default48.png",
     "128": "icons/default.png"
-  },
-  "background": {
-    "scripts": [
-      "core/background.js"
-    ]
   },
   "permissions": [
     "tabs",
