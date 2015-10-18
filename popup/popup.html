@@ -1,11 +1,10 @@
 <link rel="stylesheet" href="popup.css"/>
-
 <form id="main-form">
-  <h1>When to show AMP</h1>
+  <h1>AMP Settings</h1>
   <fieldset class="page">
-    <p>Current Page:</p>
+    <h2>Current Page:</h2>
     <label>
-      <input type="radio" value="on" name="page"> AMP version
+      <input type="radio" value="on" name="page"> AMP version if available
     </label>
     <label>
       <input type="radio" value="off" name="page"> Normal version
@@ -15,9 +14,9 @@
     </label>
   </fieldset>
   <fieldset class="domain">
-    <p><span id="current-domain"></span>:</p>
+    <h2><span id="current-domain"></span>:</h2>
     <label>
-      <input type="radio" value="on" name="domain"> AMP version
+      <input type="radio" value="on" name="domain"> AMP version if available
     </label>
     <label>
       <input type="radio" value="off" name="domain"> Normal version
@@ -27,17 +26,19 @@
     </label>
   </fieldset>
   <fieldset class="default">
-    <p>Default (what to do when no preference:</p>
+    <h2>Default (when no other preference):</h2>
     <label>
-      <input type="radio" value="on" name="default"> AMP version
+      <input type="radio" value="on" name="default"> AMP version if available
     </label>
     <label>
       <input type="radio" value="off" name="default"> Normal version
     </label>
   </fieldset>
 
-  <p id="current-domain"></p>
 </form>
+<footer>
+  <a href="http://dorightdigital.com/amp-chrome-extension" target="_blank">Provided by Do Right Digital</a>
+</footer>
 <script src="../core/config.js"></script>
 <script src="../core/helpers.js"></script>
 <script src="../core/stateManager.js"></script>
