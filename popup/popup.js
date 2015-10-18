@@ -1,4 +1,4 @@
-chrome.tabs.query({'active': true}, function (tabs) {
+chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
   var tab = tabs[0];
   var url = tab.url;
   var originalPageUrl = helpers.getOriginalUrlFromUrl(url);
