@@ -9,6 +9,9 @@
         "http://*/*",
         "https://*/*"
       ],
+      "css": [
+        "core/styles.css"
+      ],
       "js": [
         "core/config.js",
         "core/helpers.js",
