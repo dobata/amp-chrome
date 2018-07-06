@@ -5,7 +5,7 @@ if (ampUrl) {
   var currentUrl = window.location.href;
   stateManager.forUrl(currentUrl).getAmpSetting().then(function (verdict) {
     if (verdict === 'on') {
-      var redirectUrl = ampUrl + config.urlAppend + encodeURIComponent(currentUrl);
+      var redirectUrl = ampUrl;
       location.href = redirectUrl;
     }
   });
