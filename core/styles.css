@@ -1,5 +1,5 @@
 html.i-amphtml-singledoc {
-    max-width: 720px;
+    width: 720px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     margin: 0 auto;
@@ -8,5 +8,8 @@ html.i-amphtml-singledoc > body {
     width: inherit;
 }
 amp-iframe {
-    background: red;
+    background: hsl(0, 100%, 98%);
+}
+amp-ad, amp-embed {
+    background: hsl(0, 0%, 98%);
 }
